@@ -12,19 +12,7 @@ Table of Contents
    :titlesonly:
    :caption: Getting Started
 
-.. toctree::
-   :maxdepth: 2
-   :titlesonly:
-   :caption: Users Guide
+   tutorials/index
 
-.. toctree::
-   :maxdepth: 2
-   :titlesonly:
-   :caption: Developers Guide
-
-.. toctree::
-   :maxdepth: 2
-
-   developer/release_guide
 
 
