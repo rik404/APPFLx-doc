@@ -27,7 +27,7 @@ $ pip install -e .
 ## Create Globus Account
 If you do not have a globus account yet, please create a [Globus](https://app.globus.org/) account here. 
 
-@ShellyRiver: The following content should be a note.
+@ShellyRiver: The following content should be a note like [here](https://appfl.readthedocs.io/en/latest/install/index.html).
 
 Note: If you can find your institution in Globus, it is highly recommeneded to simply use your institution account to log in to Globus as it makes it easier for your collaborator to verify your identity. Otherwise, you can register a Globus account using your email address.
 
@@ -54,10 +54,13 @@ The command above will create a configuration file `$HOME/.funcx/<ENDPOINT_NAME>
 2. Now funcX changes name to Globus Compute, so sometimes you may see term Globus Compute instead of funcX in the document of funcX, but they actually refers to the same thing.
 
 ## Start the Endpoint
-Run the following command by replacing `<ENDPOINT_NAME>` with your endpoint name.
+Before starting funcX endpoint, you need to go to a certain directory you want, which will be the root directory for funcX when accessing your file system or writing output files. Please select that directory carefully. When you are in your desired directory, run the following command by replacing `<ENDPOINT_NAME>` with your endpoint name.
 ```
 funcx-endpoint start <ENDPOINT_NAME>
 ```
+
+@ShellyRiver: The following words should be a note
+If you want to change the funcX root directory or change the configuration file, you should first stop the endpoint by running `funcx-endpoint stop <ENDPOINT_NAME>` in any directory and then start it again by running `funcx-endpoint start <ENDPOINT_NAME>` in the desired directory.
 
 ## Get your Endpoint Id
 The following command with print the id of your created endpoint.
