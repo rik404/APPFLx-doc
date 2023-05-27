@@ -1,19 +1,22 @@
 # Endpoint Installation
 
-This page describes how to install a [funcX](https://funcx.org) compute endpoint for federated learning (FL) clients on their local computing resources. 
+This page describes how to install a [funcX](https://funcx.org) compute endpoint for federated learning (FL) clients on their local computing machines. 
+
+@ShellyRiver: Please make the following line a note.
+Note: funcX endpoint is only supported on linux machine.
 
 ## Conda Environment
 
-We highly recommend to create new conda virtual environment and install the required packages for setting funcX endpoint.
+We highly recommend to create a new conda virtual environment to install all the required packages for setting funcX endpoint.
 
 ```
 $ conda create -n funcx python=3.8
 $ conda activate funcx
 ```
 
-## Installation
+## Package Installation
 
-Clone the APPFL+funcX repository, and install required packages.
+Clone our Github repository containing the source code for APPFL+funcX package. Specifically, this package handles the local training and the communication with the FL orchestration server on behave of the client. Then install all required packages by running the following commands.
 
 ```
 $ git clone https://github.com/Zilinghan/FL-as-a-Service.git appflx && cd appflx && git checkout funcx
@@ -25,16 +28,16 @@ $ pip install -e .
 ```
 
 ## Create Globus Account
-If you do not have a globus account yet, please create a [Globus](https://app.globus.org/) account here. 
+If you do not have a globus account yet, please create a Globus account [here](https://app.globus.org/). 
 
 @ShellyRiver: The following content should be a note like [here](https://appfl.readthedocs.io/en/latest/install/index.html).
 
-Note: If you can find your institution in Globus, it is highly recommeneded to simply use your institution account to log in to Globus as it makes it easier for your collaborator to verify your identity. Otherwise, you can register a Globus account using your email address.
+Note: If you can find your organization in Globus, it is highly recommeneded to use your organization account to log in to Globus as that makes it easier for your collaborators to verify your identity. Otherwise, you can register a Globus account using your email address.
 
 ## Set up a funcX Endpoint
-Setup funcX endpoint using the following command. Please replace `<ENDPOINT_NAME>` with your own name `anl-aws-gpu`.
+Setup a funcX endpoint using the following command. Please replace `<ENDPOINT_NAME>` with your own name such as `anl-aws-gpu-01`.
 
-You might be required to login with [Globus](https://app.globus.org/). Please follow the prompt instructions and finish the authentication steps.
+You might be required to login with Globus when configuring the endpoint. Please follow the prompt instructions and finish the authentication steps.
 
 ```
 $ funcx-endpoint configure <ENDPOINT_NAME>
@@ -42,19 +45,20 @@ $ funcx-endpoint configure <ENDPOINT_NAME>
 ## Configure the Endpoint
 The command above will create a configuration file `$HOME/.funcx/<ENDPOINT_NAME>/config.py`. You should update this file with appropriate configurations for the computing resource you are using before start the endpoint. We provide few suggestions on setting this configuration file.
 
-@ShellyRiver: Please make the following points as a list of bullet points
-1. If you are using your own computer or some virtual machines provided by cloud service provider such as AWS EC2 or Azure virtual machines, you probably do not need change much of the `config.py` file. You just need to specify the number of blocks you want to allocate to the endpoint.
+@ShellyRiver: Please make the following points as a list of bullet points like [this](https://appfl.readthedocs.io/en/latest/users/user_run.html)
+
+1. If you are using your own linux machine or some virtual machines provided by cloud service provider such as AWS EC2 or Azure virtual machine, you probably do not need change most part of the `config.py` file. You just need to specify the number of blocks you want to allocate to the endpoint.
 
 2. If you are using any supercomputer as your computing resources which uses some scheduler such as Slurm to allocate resources, you can find some example configurations for various supercomputers [here](https://funcx.readthedocs.io/en/latest/endpoints.html#example-configurations). We also provide two example configurations for allocating [CPU](https://github.com/Zilinghan/FaaS-web/blob/main/docments/config-cpu.py)/[GPU](https://github.com/Zilinghan/FaaS-web/blob/main/docments/config-gpu.py) resources on a supercomputer using Slurm scheduler.
 
 @ShellyRiver: I want the following thing to be a note
 
-1. If you have further questions about setting up funcX endpoint, please join the [funcX Slack](https://join.slack.com/t/funcx/shared_invite/zt-gfeclqkz-RuKjkZkvj1t~eWvlnZV0KA) for help.
+1. If you have further questions about setting up funcX endpoints, please join the [funcX Slack](https://join.slack.com/t/funcx/shared_invite/zt-gfeclqkz-RuKjkZkvj1t~eWvlnZV0KA) for help.
 
-2. Now funcX changes name to Globus Compute, so sometimes you may see term Globus Compute instead of funcX in the document of funcX, but they actually refers to the same thing.
+2. Now funcX changes name to Globus Compute, so sometimes you may see term Globus Compute instead of funcX in the funcX document, but they actually refers to the same thing.
 
 ## Start the Endpoint
-Before starting funcX endpoint, you need to go to a certain directory you want, which will be the root directory for funcX when accessing your file system or writing output files. Please select that directory carefully. When you are in your desired directory, run the following command by replacing `<ENDPOINT_NAME>` with your endpoint name.
+Before starting the funcX endpoint, you need to first change to a certain directory you want, which will be the root directory for funcX when accessing your file system or writing output files. Please select that root directory carefully. When you are in your desired directory, run the following command by replacing `<ENDPOINT_NAME>` with your endpoint name to start the funcX endpoint.
 ```
 funcx-endpoint start <ENDPOINT_NAME>
 ```
@@ -63,13 +67,13 @@ funcx-endpoint start <ENDPOINT_NAME>
 If you want to change the funcX root directory or change the configuration file, you should first stop the endpoint by running `funcx-endpoint stop <ENDPOINT_NAME>` in any directory and then start it again by running `funcx-endpoint start <ENDPOINT_NAME>` in the desired directory.
 
 ## Get your Endpoint Id
-The following command with print the id of your created endpoint.
+The following command will print the id of your created endpoint.
 
 ```
 funcx-endpoint list
 ```
-## A Simple Test
-You can create a python script (e.g. `test.py`) by copy the following codes to test if you have successfully set up a funcX endpoint. You need to put your own endpoint id into the script and you should see the printed result computed by your endpoint.
+## Run A Simple Test
+You can create a python script (e.g. `test.py`) by copying the following codes to test if you have successfully set up a funcX endpoint. You need to put your own endpoint id into the script, and you should see the printed result computed by your endpoint.
 
 @ShellyRiver: I want the code to be display like code [here](https://appfl.readthedocs.io/en/latest/users/user_run.html)
 
