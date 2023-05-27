@@ -12,7 +12,7 @@ When a user receives and accepts the group invitation to join a federation, the 
 
 5. For **Dataloader**, you need to provide a python script which loads your local private data by returning a PyTorch dataset (`torch.utils.data.Dataset`) containing the samples and labels for your local data. This dataloader file will run in the root directory of your funcX endpoint, so you may need to specify the relative path from the funcX root directory to your data path to load the data.
 
-6. For the dataloader file, you need to provide a `.py` script which contains a function defined in the following way. We provide a test [dataloader](mnist-dataloader.py) for testing purposes, which loads part of the MNIST dataset for each client. New users are recommended to upload this test dataloader for test.
+6. For the dataloader file, you need to provide a `.py` script which contains a function defined in the following way. We provide a test [dataloader](mnist_dataloader.py) for testing purposes, which loads part of the MNIST dataset for each client. New users are recommended to upload this test dataloader for test.
 ``` 
 def get_data(**kwargs) {
     // Import necessary libraries
