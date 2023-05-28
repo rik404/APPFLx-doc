@@ -7,7 +7,7 @@ This page describes how the federated learning group leader can check the result
 	
 	Currently, only the group leader of a certain federation can check the experiment results.
 
-1. Log in to the `web application<https://appflx.link>`_ by following the instructions. 
+1. Log in to the `web application <https://appflx.link>`_ by following the instructions. 
 
 2. You will be directed to a dashboard page after signing in. The dashboard lists your **Federations** and your **Sites**. Specifically, federation refers to the FL group that you created, namely, you are the group leader who can start FL experiments and access the experiment results. Site refers to the FL group of which you are a member. The federation leader is also a site of his own federation by default.
 

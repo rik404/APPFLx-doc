@@ -34,7 +34,7 @@ Clone our Github repository containing the source code for APPFL+funcX package. 
 Create Globus Account
 -----------------
 
-If you do not have a globus account yet, please create a Globus account `here <https://app.globus.org/>`.
+If you do not have a globus account yet, please create a Globus account `here <https://app.globus.org/>`_.
 
 .. note::
 
