@@ -14,7 +14,7 @@ We highly recommend to create a new conda virtual environment to install all the
 
 .. code-block:: console
 
-    $ conda create -n funcx python=3.8
+    	$ conda create -n funcx python=3.8
 	$ conda activate funcx
 
 Package Installation
@@ -24,7 +24,7 @@ Clone our Github repository containing the source code for APPFL+funcX package. 
 
 .. code-block:: console
 
-    $ git clone https://github.com/Zilinghan/FL-as-a-Service.git appflx && cd appflx && git checkout funcx
+    	$ git clone https://github.com/Zilinghan/FL-as-a-Service.git appflx && cd appflx && git checkout funcx
 	$ pip install -r requirements.txt
 	$ pip install -e .
 

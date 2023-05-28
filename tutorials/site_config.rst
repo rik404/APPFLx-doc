@@ -15,21 +15,10 @@ When a user receives and accepts the group invitation to join a federation, the 
 
 6. For the dataloader file, you need to provide a ``.py`` script which contains a function defined in the following way. We provide a test `dataloader <https://github.com/APPFL/APPFLx-doc/blob/main/tutorials/mnist_dataloader.py>`_ for testing purposes, which loads part of the MNIST dataset for each client. New users are recommended to upload this test dataloader for test first.
 
-.. code-block:: python
-    :linenos:
+.. literalinclude:: /tutorials/dataloader.py
+    :language: python
+    :caption: Template for local dataloader: tutorials/dataloader.py
 
-	def get_data(**kwargs) {
-    	# Import necessary libraries
-		import torch
-		from torch.utils.data import Dataset
-		......
-
-		# Write code to load your local data
-		......
-
-		# Return PyTorch Dataset
-		return Dataset(local_data, local_labels)
-	}
 
 .. note::
 
