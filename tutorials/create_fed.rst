@@ -1,8 +1,9 @@
-# Create Federation
+Create Federation
+============
 
 This page describes how to create a federated learning group (federation) and invite collaborators.
 
-1. Log in to the [web application](https://appflx.link) by following the instructions. @ShellyRiver: link the signin page.
+1. Log in to the `web application <https://appflx.link>` by following the instructions. 
 
 2. You will be directed to a dashboard page after signing in. The dashboard lists your **Federations** and your **Sites**. Specifically, federation refers to the FL group that you created, namely, you are the group leader who can start FL experiments and access the experiment results. Site refers to the FL group of which you are a member. The federation leader is also a site of his own federation by default.
 

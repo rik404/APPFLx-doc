@@ -1,11 +1,13 @@
-# Check Experiment Results
+Check Experiment Results
+============
 
 This page describes how the federated learning group leader can check the results of federated learning experiments conducted under certain federation.
 
-@ShellyRiver: Make the following thing a note.
-Note: Currently, only the group leader of a certain federation can check the experiment results.
+.. note::
+	
+	Currently, only the group leader of a certain federation can check the experiment results.
 
-1. Log in to the [web application](https://appflx.link) by following the instructions. @ShellyRiver: link the signin page.
+1. Log in to the `web application<https://appflx.link>` by following the instructions. 
 
 2. You will be directed to a dashboard page after signing in. The dashboard lists your **Federations** and your **Sites**. Specifically, federation refers to the FL group that you created, namely, you are the group leader who can start FL experiments and access the experiment results. Site refers to the FL group of which you are a member. The federation leader is also a site of his own federation by default.
 
@@ -17,5 +19,6 @@ Note: Currently, only the group leader of a certain federation can check the exp
 
 6. You can select multiple experiments by clicking the check boxes to the left of the experiment names, and you can click the **Compare** button to compare the results of multiple experiments.
 
-@ShellyRiver: Make the following thing a note.
-Note: Currently, the **delete** button is not available for use yet.
+.. note::
+	
+	Currently, the **delete** button is not available for use yet.
