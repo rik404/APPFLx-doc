@@ -1,7 +1,7 @@
 Check Experiment Results
 ============
 
-This page describes how the federated learning group leader can check the results of federated learning experiments conducted under certain federation.
+This page describes how the federation leader can check the results of federated learning experiments conducted under certain federation.
 
 .. note::
 	
@@ -13,7 +13,7 @@ This page describes how the federated learning group leader can check the result
 
 3. Click the name of the federation for which you want to check the experiment results, which will lead you to the **Federation Information** page. 
 
-4. **Endpoint Information** at the top of the Federation Information page shows the information of the clients and the status of their computing resources (funcX endpoint).
+4. **Endpoint Information** at the top of the Federation Information page shows the information of the clients and the status of their computing resources (funcX endpoints).
 
 5. **Experiment Information** lists the information of all experiments conducted under this federation. For a certain experiment, click the **Config** icon to see the configurations for that experiment, click the **Log** icon to see the training log of the orchestration server, click **Report** icon to see the generated report for the experiment, and click the **Tensorboard** icon to see the tensorboard log of the experiment.
 

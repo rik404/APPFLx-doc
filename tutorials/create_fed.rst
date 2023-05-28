@@ -11,4 +11,4 @@ This page describes how to create a federated learning group (federation) and in
 
 4. Click **Save** and then you can see your newly created group in the dashboard.
 
-5. To invite collaborators to join the federation, go to the dashboard page and click **Group Manage** button next to your created federation, and this will open the Globus group management page. Click **Members** tab on the top, and then click **Invite Others to Join** on the top right. Then you can invite your collaborator by typing their name or email address.
+5. To invite collaborators to join the federation, go to the dashboard page and click **Group Manage** button next to your created federation, and this will open the Globus group management page. Click **Members** tab on the top, and then click **Invite Others to Join** on the top right. Then you can invite your collaborators by typing their name or email address.

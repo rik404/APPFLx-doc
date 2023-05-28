@@ -9,7 +9,7 @@ When a user receives and accepts the group invitation to join a federation, the 
 
 3. Click **Configure** button next to the site for which you want to register your computing resources and dataloader.
 
-4. If you have already installed a funcX endpoint on your computing resource, just enter the endpoint ID to **Endpoint ID**. If you have not installed a funcX endpoint, either follow the instruction in the site configuration page or `here <https://ppflaas.readthedocs.io/en/latest/tutorials/installation>`_. 
+4. If you have already installed a funcX endpoint on your computing resource, just enter the endpoint ID to **Endpoint ID**. If you have not installed a funcX endpoint, either follow the instruction in the site configuration page or `here <https://ppflaas.readthedocs.io/en/latest/installation/index.html>`_. 
 
 5. For **Dataloader**, you need to provide a python script which loads your local private data by returning a PyTorch dataset (``torch.utils.data.Dataset``) containing the samples and labels for your local data. This dataloader will be called in the root directory of your funcX endpoint, so you may need to specify the relative path from the funcX root directory to your data to load the data.
 
@@ -19,23 +19,23 @@ When a user receives and accepts the group invitation to join a federation, the 
     :linenos:
 
 	def get_data(**kwargs) {
-    		// Import necessary libraries
-    		import torch
-    		from torch.utils.data import Dataset
-    		......
+    	# Import necessary libraries
+		import torch
+		from torch.utils.data import Dataset
+		......
 
-    		// Write code to load your local data
-    		......
+		# Write code to load your local data
+		......
 
-    		// Return PyTorch Dataset
-    		return Dataset(local_data, local_labels)
+		# Return PyTorch Dataset
+		return Dataset(local_data, local_labels)
 	}
 
 .. note::
 
 	Though you upload a dataloader for your private and sensitive local data, it is only called on your own computing resource for local training and no training data will leave your own computing resources. 
 
-7. When you have your dataloader file ready, you can either upload it from your local computer by clicking **Upload from Computer** or upload it from Github by clicking **Upload from Github**. When you choose upload from Github, a modal will pop up, first click **Authorize with Github** to link your Github account, then you can choose or search for the repository, select the branch and file to upload.
+7. When you have your dataloader file ready, you can either upload it from your local computer by clicking **Upload from Computer** or upload it from Github by clicking **Upload from Github**. When you choose to upload from Github, a modal will pop up, first click **Authorize with Github** to link your Github account, then you can choose or search for the repository, select the branch and file to upload.
 
 8. For **Device Type**, select **cpu** if your computing device does not have GPU or you don't want to use GPU in trianing, otherwise, select **cuda:0** to enable GPU usage in training.
 

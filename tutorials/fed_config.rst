@@ -1,7 +1,7 @@
-Start Federated Learning Experiments
+Start Experiments
 ============
 
-This page describes how the FL group (federation) leader can start an FL experiment on the web application.
+This page describes how the FL group (federation) leader can start an FL experiment via the web application.
 
 1. Log in to the `web application <https://appflx.link>`_ by following the instructions. 
 

@@ -10,7 +10,7 @@ def get_data(
     from appfl.misc.data import Dataset
 
     ## Prepare local dataset directory
-    local_dir      = osp.join("data","RawData")
+    local_dir = osp.join("data","RawData")
     data_raw = eval("torchvision.datasets." + "MNIST")(
         local_dir, download = True, 
         train = True if mode == 'train' else False, 

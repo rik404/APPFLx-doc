@@ -1,11 +1,9 @@
-APPFL: Argonne Privacy-Preserving Federated Learning
+APPFLX.LINK: Argonne Privacy-Preserving Federated Learning as a Service
 ====================================================
 
-.. automodule:: appfl
+APPFLX.LINK is a web application that aims to provide cross-silo privacy-preserving federated learning as a service. APPFLx supports various synchronous and asynchronous federated learning algorithms and streamlines the configuration process for starting secure federated learning experiments.
 
-
-Table of Contents
------------------
+.. image:: _static/logo/logo_small.png
 
 .. toctree::
    :maxdepth: 2
