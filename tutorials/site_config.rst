@@ -3,13 +3,13 @@ Site Configuration
 
 When a user receives and accepts the group invitation to join a federation, the user becomes a site, namely, a client in federated learning. This page describes how the client user can register their computing resources and the loader of local private data to the federation via the web application.
 
-1. Log in to the `web application <https://appflx.link>` by following the instructions.
+1. Log in to the `web application <https://appflx.link>`_ by following the instructions.
 
 2. You will be directed to a dashboard page after signing in. The dashboard lists your **Federations** and your **Sites**. Specifically, federation refers to the FL group that you created, namely, you are the group leader who can start FL experiments and access the experiment results. Site refers to the FL group of which you are a member. The federation leader is also a site of his own federation by default.
 
 3. Click **Configure** button next to the site for which you want to register your computing resources and dataloader.
 
-4. If you have already installed a funcX endpoint on your computing resource, just enter the endpoint ID to **Endpoint ID**. If you have not installed a funcX endpoint, either follow the instruction in the site configuration page or `here <https://ppflaas.readthedocs.io/en/latest/tutorials/installation>`. 
+4. If you have already installed a funcX endpoint on your computing resource, just enter the endpoint ID to **Endpoint ID**. If you have not installed a funcX endpoint, either follow the instruction in the site configuration page or `here <https://ppflaas.readthedocs.io/en/latest/tutorials/installation>`_. 
 
 5. For **Dataloader**, you need to provide a python script which loads your local private data by returning a PyTorch dataset (``torch.utils.data.Dataset``) containing the samples and labels for your local data. This dataloader will be called in the root directory of your funcX endpoint, so you may need to specify the relative path from the funcX root directory to your data to load the data.
 

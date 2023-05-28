@@ -3,7 +3,7 @@ Start Federated Learning Experiments
 
 This page describes how the FL group (federation) leader can start an FL experiment on the web application.
 
-1. Log in to the `web application <https://appflx.link>` by following the instructions. 
+1. Log in to the `web application <https://appflx.link>`_ by following the instructions. 
 
 2. You will be directed to a dashboard page after signing in. The dashboard lists your **Federations** and your **Sites**. Specifically, federation refers to the FL group that you created, namely, you are the group leader who can start FL experiments and access the experiment results. Site refers to the FL group of which you are a member. The federation leader is also a site of his own federation by default.
 
@@ -14,13 +14,13 @@ This page describes how the FL group (federation) leader can start an FL experim
 5. For **Federation Algorithm**, we support the following federated learning algorithms. Choose one algorithm that you want to use.
 
 
-- `Federated Average <https://proceedings.mlr.press/v54/mcmahan17a/mcmahan17a.pdf>`: Communication-Efficient Learning of Deep Networks from Decentralized Data
+- `Federated Average <https://proceedings.mlr.press/v54/mcmahan17a/mcmahan17a.pdf>`_: Communication-Efficient Learning of Deep Networks from Decentralized Data
 
-- `Federated Average Momentum <https://arxiv.org/pdf/1909.06335.pdf>`: Measuring the Effects of Non-Identical Data Distribution for Federated Visual Classification
+- `Federated Average Momentum <https://arxiv.org/pdf/1909.06335.pdf>`_: Measuring the Effects of Non-Identical Data Distribution for Federated Visual Classification
 
-- `Federated Adagrad/Adam/Yogi <https://arxiv.org/pdf/2003.00295.pdf>`: Adaptive Federated Optimization
+- `Federated Adagrad/Adam/Yogi <https://arxiv.org/pdf/2003.00295.pdf>`_: Adaptive Federated Optimization
 
-- `Federated Asynchronous <https://arxiv.org/pdf/1903.03934.pdf>`: Asynchronous Federated Optimization
+- `Federated Asynchronous <https://arxiv.org/pdf/1903.03934.pdf>`_: Asynchronous Federated Optimization
 
 6. For **Experiment Name**, please provide a name of your choice for this FL experiment.
 

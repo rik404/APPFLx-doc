@@ -1,7 +1,7 @@
 Endpoint Installation
 ============
 
-This page describes how to install a `funcX <https://funcx.org/>` compute endpoint for federated learning (FL) clients on their local computing machines.
+This page describes how to install a `funcX <https://funcx.org/>`_ compute endpoint for federated learning (FL) clients on their local computing machines.
 
 .. note::
 
@@ -58,11 +58,11 @@ The command above will create a configuration file ``$HOME/.funcx/<ENDPOINT_NAME
 
 	- If you are using your own linux machine or some virtual machines provided by cloud service provider such as AWS EC2 or Azure virtual machine, you probably do not need change most part of the config.py file. You just need to specify the number of blocks you want to allocate to the endpoint.
 
-	- If you are using any supercomputer as your computing resources which uses some scheduler such as Slurm to allocate resources, you can find some example configurations for various supercomputers `here <https://funcx.readthedocs.io/en/latest/endpoints.html#example-configurations>`. We also provide two example configurations for allocating `CPU <https://github.com/Zilinghan/FaaS-web/blob/main/docments/config-cpu.py>`/`GPU <https://github.com/Zilinghan/FaaS-web/blob/main/docments/config-gpu.py>` resources on a supercomputer using Slurm scheduler.
+	- If you are using any supercomputer as your computing resources which uses some scheduler such as Slurm to allocate resources, you can find some example configurations for various supercomputers `here <https://funcx.readthedocs.io/en/latest/endpoints.html#example-configurations>`_. We also provide two example configurations for allocating `CPU <https://github.com/Zilinghan/FaaS-web/blob/main/docments/config-cpu.py>`_/`GPU <https://github.com/Zilinghan/FaaS-web/blob/main/docments/config-gpu.py>`_ resources on a supercomputer using Slurm scheduler.
 
 .. note::
 
-	- If you have further questions about setting up funcX endpoints, please join the `funcX Slack <https://join.slack.com/t/funcx/shared_invite/zt-gfeclqkz-RuKjkZkvj1t~eWvlnZV0KA>` for help.
+	- If you have further questions about setting up funcX endpoints, please join the `funcX Slack <https://join.slack.com/t/funcx/shared_invite/zt-gfeclqkz-RuKjkZkvj1t~eWvlnZV0KA>`_ for help.
 
 	- Now funcX changes name to Globus Compute, so sometimes you may see term Globus Compute instead of funcX in the funcX document, but they actually refers to the same thing.
 
@@ -96,6 +96,7 @@ You can create a python script (e.g. ``test.py``) by copying the following codes
 
 .. code-block:: python
     :linenos:
+
 	from funcx import FuncXExecutor
 
 	def double(x):
