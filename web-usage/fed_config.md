@@ -2,13 +2,13 @@
 
 This page describes how the FL group (federation) leader can start an FL experiment on the web application.
 
-1. Log in to the [web application](https://appflx.link)  by following the instructions. @ShellyRiver: link the signin page.
+1. Log in to the [web application](https://appflx.link) by following the instructions. @ShellyRiver: link the signin page.
 
-2. You will see a dashboard after logging in. The dashboard lists your **Federations** and your **Sites**. Specifically, federation refers to the FL group that you created and you are the group leader who can start FL experiments and access the experiment results. Site refers to the FL group that you are a member of. The federation leader is also a site of his own federation.
+2. You will be directed to a dashboard page after signing in. The dashboard lists your **Federations** and your **Sites**. Specifically, federation refers to the FL group that you created, namely, you are the group leader who can start FL experiments and access the experiment results. Site refers to the FL group of which you are a member. The federation leader is also a site of his own federation by default.
 
-3. Click **Create New Experiment** button next to the federation for which you want to start the experiment. This will lead you to the **Federation Configuration** page.
+3. Click **Create New Experiment** button next to the federation for which you want to start the FL experiment. This will lead you to the **Federation Configuration** page.
 
-4. **Client Endpoints** at the top of the page shows the status of client (site) funcX endpoints. Click the icon to see the details of the endpoint status. Only clients (sites) with active endpoint can join the FL experiment. You can contact the client via email by clicking the email icon if the client endpoint is not active.
+4. **Client Endpoints** at the top of the page shows the status of client (site) funcX endpoints. Click the status icon to see the details of the endpoint status. Only clients (sites) with active endpoints will join the FL experiment. You can contact the client via email by clicking the email icon if the client endpoint is not active.
 
 5. For **Federation Algorithm**, we support the following federated learning algorithms. Choose one algorithm that you want to use.
 
@@ -26,16 +26,16 @@ This page describes how the FL group (federation) leader can start an FL experim
 
 7. For **Server Training Epochs**, enter the number of global aggregations for the FL experiment.
 
-8. For **Client Training Epochs**, enter the number of local training epochs for each client (site) before sending model back to the server.
+8. For **Client Training Epochs**, enter the number of local training epochs for each client (site) before sending the local model back to the server.
 
-9. For **Server Validation Set for Benchmarking**, select **None** if you are doing your own experiment. Select **MNIST** only if your FL group is using the provided MNIST dataloader for testing, and this will enable the orchestration server to download the MNIST dataset and perform server validation.
+9. For **Server Validation Set for Benchmarking**, select **None** if you are doing your own experiments. Select **MNIST** only if your FL group is using the provided MNIST dataloader for testing purposes, and this will enable the orchestration server to download the MNIST test dataset and perform server test.
 
 10. **Privacy Budget**, **Clip Value** and **Clip Norm** are used for preserving privacy, enter 0 to disable this.
 
-11. Upload the training model architecture by either selecting a **Template Model**, uploading a **Custom Model** or choose a custom model by **Uploading from Github**.
+11. Upload the training model architecture by either selecting a **Template Model**, uploading a **Custom Model**, or choosing a custom model by **Uploading from Github**. When you choose upload from Github, a modal will pop up, first click **Authorize with Github** to link your Github account, then you can choose or search for the repository, select the branch and file to upload.
 
-12. For **Client Optimizer**, choose either SGD or Adam, and specify the local learning rate of each client in **Client Learning Rate**. For different client local training round, you can choose to decrease the learning rate by entering a value between 0 and 1 in **Client Learning Rate Decay**. 
+12. For **Client Optimizer**, choose either SGD or Adam, and specify the local learning rate of each client in **Client Learning Rate**. For different client local training rounds, you can choose to decay the client learning rate by entering a value between 0 and 1 in **Client Learning Rate Decay**. 
 
-13. For **Client Weights**, **Proportional to Sample Size** means applying different weights to client local models during global aggregation by calculating the weights proportional to client sample size, and **Equal for All Clients** means applying the same weights to all client local models.
+13. For **Client Weights**, **Proportional to Sample Size** means applying different weights to different client local models during the global aggregation by calculating the weights proportional to the client sample size, and **Equal for All Clients** means applying the same weights to all client local models.
 
-14. After carefully choosing all configurations and hyperparameters for the FL experiment, you can start the experiment by clicking **Start**. Then the web application will launch an orchestration server which trains a federated learning model by collaborating with all active client endpoints.
+14. After carefully choosing all configurations and hyperparameters for the FL experiment, you can start the experiment by clicking **Start**. Then the web application will launch an orchestration server for you which trains a federated learning model by collaborating with all active client endpoints.
