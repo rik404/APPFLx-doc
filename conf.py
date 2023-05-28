@@ -18,7 +18,7 @@ import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 
-project = 'APPFL'
+project = 'APPFLX.LINK'
 copyright = '2021, Argonne National Laboratory'
 author = 'Argonne National Laboratory'
 
