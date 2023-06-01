@@ -32,7 +32,7 @@ This page describes how the FL group (federation) leader can start an FL experim
 
 10. **Privacy Budget**, **Clip Value** and **Clip Norm** are used for preserving privacy, enter 0 to disable this.
 
-11. Upload the training model architecture by either selecting a **Template Model**, uploading a **Custom Model**, or choosing a custom model by **Uploading from Github**. When you choose upload from Github, a modal will pop up, first click **Authorize with Github** to link your Github account, then you can choose or search for the repository, select the branch and file to upload.
+11. Upload the training model architecture by either selecting a **Template Model**, uploading a **Custom Model**, or choosing a custom model by **Uploading from Github**. When you choose upload from Github, a modal will pop up, first click **Authorize with Github** to link your Github account, then you can choose or search for the repository, select the branch and file to upload. If you want to use a custom model, you need to provide a ``.py`` script which contains a function called ``get_model()``. You can find a template model definition file `here <https://github.com/APPFL/APPFLx-doc/blob/main/tutorials/cnn.py>`_. Basically, you need to first define your PyTorch model by inheriting ``torch.nn.Module``, and then define the ``get_model`` function to return the defined model class.
 
 12. For **Client Optimizer**, choose either SGD or Adam, and specify the local learning rate of each client in **Client Learning Rate**. For different client local training rounds, you can choose to decay the client learning rate by entering a value between 0 and 1 in **Client Learning Rate Decay**. 
 
