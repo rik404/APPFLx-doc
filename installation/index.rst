@@ -76,7 +76,11 @@ Before starting the funcX endpoint, you need to first change to a certain direct
 
 .. note::
 
-	If you want to change the funcX root directory or change the configuration file, you should first stop the endpoint by running ``funcx-endpoint stop <ENDPOINT_NAME>`` in any directory and then start it again by ``running funcx-endpoint start <ENDPOINT_NAME>`` in the desired directory.
+	Whenever you start your endpoint, you should start it in the **created conda environment**.
+
+.. note::
+
+	If you want to change the funcX root directory or change the configuration file, you should first stop the endpoint by running ``funcx-endpoint stop <ENDPOINT_NAME>`` in any directory and then start it again by ``running funcx-endpoint start <ENDPOINT_NAME>`` in the desired directory. 
 
 Get your Endpoint Id
 -----------------
