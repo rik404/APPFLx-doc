@@ -31,6 +31,7 @@ Clone our Github repository containing the source code for APPFL+funcX package. 
 .. note::
 
 	We recently moved the client-side code to a new repository (APPFL/APPFLx-Client.git), if you are using the old one (Zilinghan/FL-as-a-Service.git), you can run the following commands in your local git directory to change remote repo.
+	
 	.. code-block:: console
 
 			$ git remote rename origin old-origin
