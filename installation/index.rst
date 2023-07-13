@@ -24,9 +24,22 @@ Clone our Github repository containing the source code for APPFL+funcX package. 
 
 .. code-block:: console
 
-    	$ git clone https://github.com/Zilinghan/FL-as-a-Service.git appflx && cd appflx && git checkout funcx
+    	$ git clone https://github.com/APPFL/APPFLx-Client.git appflx && cd appflx
 	$ pip install -r requirements.txt
 	$ pip install -e .
+
+.. note::
+
+	We recently moved the client-side code to a new repository (APPFL/APPFLx-Client.git), if you are using the old one (Zilinghan/FL-as-a-Service.git), you can run the following commands in your local git directory to change remote repo.
+	.. code-block:: console
+
+			$ git remote rename origin old-origin
+		$ git remote add origin https://github.com/APPFL/APPFLx-Client.git
+		$ git fetch origin
+		$ git checkout origin/main -B main
+		$ git branch -D funcx
+		$ git remote remove old-origin
+
 
 Create Globus Account
 -----------------
