@@ -11,9 +11,16 @@ When a user receives and accepts the group invitation to join a federation, the 
 
 4. If you have already installed a funcX endpoint on your computing resource, just enter the endpoint ID to **Endpoint ID**. If you have not installed a funcX endpoint, either follow the instruction in the site configuration page or `here <https://ppflaas.readthedocs.io/en/latest/installation/index.html>`_. 
 
-5. For **Dataloader**, you need to provide a python script which loads your local private data by returning a PyTorch dataset (``torch.utils.data.Dataset``) containing the samples and labels for your local data. This dataloader will be called in the root directory of your funcX endpoint, so you may need to specify the relative path from the funcX root directory to your data to load the data.
+5. For **Git Repository Path**, please the enter the **absolute** path of the directory where you clone the APPFLx client package, such as `/home/username/appflx`. If you forget this path, you can obtain it by running the following commands on your computing device.
 
-6. For the dataloader file, you need to provide a ``.py`` script which contains a function defined in the following way. We provide a test `dataloader <https://github.com/APPFL/APPFLx-doc/blob/main/tutorials/mnist_dataloader.py>`_ for testing purposes, which loads part of the MNIST dataset for each client. New users are recommended to upload this test dataloader for test first.
+.. code-block:: console
+
+    $ conda activate funcx(YOUR_ENV_NAME)
+    $ pip list | grep appfl
+
+6. For **Dataloader**, you need to provide a python script which loads your local private data by returning a PyTorch dataset (``torch.utils.data.Dataset``) containing the samples and labels for your local data. This dataloader will be called in the root directory of your funcX endpoint, so you may need to specify the relative path from the funcX root directory to your data to load the data.
+
+7. For the dataloader file, you need to provide a ``.py`` script which contains a function defined in the following way. We provide a test `dataloader <https://github.com/APPFL/APPFLx-doc/blob/main/tutorials/mnist_dataloader.py>`_ for testing purposes, which loads part of the MNIST dataset for each client. New users are recommended to upload this test dataloader for test first.
 
 .. literalinclude:: /tutorials/dataloader.py
     :language: python

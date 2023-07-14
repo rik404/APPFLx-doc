@@ -41,6 +41,13 @@ Clone our Github repository containing the source code for APPFL+funcX package. 
 		$ git branch -D funcx
 		$ git remote remove old-origin
 
+	**Hint**: If you forget the path to your local git directory, you can find it by running the following commands.
+
+	.. code-block:: console
+
+		$ conda activate funcx
+		$ pip list | grep appfl
+
 
 Create Globus Account
 -----------------
@@ -115,3 +122,7 @@ You can create a python script (e.g. ``test.py``) by copying the following codes
     :language: python
     :caption: Test script for testing funcX endpoint setup: installation/endpoint_test.py
 
+Provide Your Endpoint to APPFLx Developer
+-----------------
+
+Dear APPFLx collaborators, currently, we have to ask the funcX developers to manually add your endpoint id to a certain globus group for usage in experiments, and this process cannot be automated now for some safety reasons. Please provide your endpoint id to us via Slack, and we will register the endpoint for you.
