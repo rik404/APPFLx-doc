@@ -1,4 +1,4 @@
-Endpoint Installation
+Endpoint Installation Using WSL
 ============
 
 This page describes how to install a `funcX <https://funcx.org/>`_ compute endpoint for federated learning (FL) clients on Windows machine using WSL.
