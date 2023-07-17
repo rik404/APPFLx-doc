@@ -7,17 +7,7 @@ This page describes how to install a `funcX <https://funcx.org/>`_ compute endpo
 Install WSL
 -----------------
 
-We highly recommend to create a new conda virtual environment to install all the required packages for setting funcX endpoint.
-
-.. code-block:: console
-
-    	$ conda create -n funcx python=3.8
-	$ conda activate funcx
-
-Package Installation
------------------
-
-Follow `Install WSL | Microsoft Learn <https://learn.microsoft.com/en-us/windows/wsl/install>`_
+Follow `Install WSL | Microsoft Learn <https://learn.microsoft.com/en-us/windows/wsl/install>`_.
 
 
 Install conda in WSL
@@ -61,4 +51,4 @@ Install conda in WSL
 Endpoint Installation
 -----------------
 
-Follow `Endpoint Installation <https://ppflaas.readthedocs.io/en/latest/installation/index.html>`_
+Follow `Endpoint Installation <https://ppflaas.readthedocs.io/en/latest/installation/index.html>`_.
