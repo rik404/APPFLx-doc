@@ -1,5 +1,5 @@
 Log in/Sign up
-=========
+==============
 
 We build a web application to provide privacy-preserving federated learning as a service. To login, 
 

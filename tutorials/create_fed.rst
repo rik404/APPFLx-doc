@@ -1,5 +1,5 @@
 Create Federation
-============
+=================
 
 This page describes how to create a federated learning group (federation) and invite collaborators.
 

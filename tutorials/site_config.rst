@@ -1,5 +1,5 @@
 Site Configuration
-=========
+==================
 
 When a user receives and accepts the group invitation to join a federation, the user becomes a site, namely, a client in federated learning. This page describes how the client user can register their computing resources and the loader of local private data to the federation via the web application.
 

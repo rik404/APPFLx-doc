@@ -1,17 +1,17 @@
 Endpoint Installation Using WSL
-============
+===============================
 
 This page describes how to install a `funcX <https://funcx.org/>`_ compute endpoint for federated learning (FL) clients on Windows machine using WSL.
 
 
 Install WSL
------------------
+-----------
 
 Follow `Install WSL | Microsoft Learn <https://learn.microsoft.com/en-us/windows/wsl/install>`_.
 
 
 Install conda in WSL
------------------
+--------------------
 
 1. Update and upgrade WSL Linux distribution
 
@@ -49,6 +49,6 @@ Install conda in WSL
     	$ conda –version
 
 Endpoint Installation
------------------
+---------------------
 
 Follow `Endpoint Installation <https://ppflaas.readthedocs.io/en/latest/installation/index.html>`_.

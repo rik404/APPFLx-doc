@@ -1,5 +1,5 @@
 Check Experiment Results
-============
+========================
 
 This page describes how the federation leader can check the results of federated learning experiments conducted under certain federation.
 
