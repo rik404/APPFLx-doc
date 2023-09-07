@@ -12,7 +12,6 @@
 #
 import os
 import sys
-sys.path.insert(0, os.path.abspath('../src'))
 
 import sphinx_rtd_theme
 
@@ -59,3 +58,35 @@ autodoc_mock_imports = [
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '_data']
 
 nbsphinx_execute = 'never'
+
+# -- Options for HTML output -------------------------------------------------
+
+# The theme to use for HTML and HTML Help pages.  See the documentation for
+# a list of builtin themes.
+#
+# html_theme = 'sphinx_book_theme'
+# html_theme_path = [sphinx_book_theme.get_html_theme_path()]
+html_theme = 'sphinx_rtd_theme'
+
+# html_logo = '_static/logo/appfl.png'
+
+html_theme_options = {
+    # header settings
+#     "repository_url": "https://github.com/APPFL/APPFL",
+#     "use_repository_button": True,
+#     "use_issues_button": True,
+#     "use_edit_page_button": True,
+#     "repository_branch": "main",
+#     "path_to_docs": "docs",
+#     "use_download_button": False,
+    # sidebar settings
+#     "show_navbar_depth": 1,
+#     "logo_only": True,
+}
+
+# Add any paths that contain custom static files (such as style sheets) here,
+# relative to this directory. They are copied after the builtin static files,
+# so a file named "default.css" will overwrite the builtin "default.css".
+html_static_path = ['_static']
+
+
