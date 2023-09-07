@@ -14,3 +14,9 @@ APPFLX.LINK is a web application that aims to provide cross-silo privacy-preserv
    installation_win/index
    tutorials/index
 
+.. toctree::
+   :maxdepth: 2
+   :titlesonly:
+   :caption: News
+
+   news/index
