@@ -30,5 +30,19 @@ A research team from Argonne National Laboratory recently developed a `Genome-sc
 
 - Familiar with PyTorch and HuggingFace Transformer libraries is preferred.
 
+**Contact**: Zilinghan Li (zl52@illinois.edu), Ravi Madduri (madduri@anl.gov)
+
+**3. Integrating RabbitMQ or MQTT Communication Protocol to Argonne Privacy-Preserving Federated Learning (APPFL) Framework and More as a Framework Main Developer and Maintainer**
+
+**Abstract:**
+
+`Argonne Privacy-Preserving Federated Learning (APPFL) Framework <https://github.com/APPFL/APPFL>`_ currently supports three communication protocols for federated learning. (1) MPI for FL simulations on one computing machine or HPC cluster. (2) gRPC for running FL on real-world server and client devices. (3) Globus Compute for running FL on real-world server and client devices, especially on HPC and supercomputers. We now would like to integrate RabbitMQ/MQTT protocols to support federated learning for edge devices. Additionally, we want the student to step up to the leadership role to maintain and further develop the APPFL framework.
+
+**Requirements:**
+
+- Familiar with Python programming.
+
+- Familiar with RabbitMQ or MQTT is highly preferred.
+
 **Contact**: Zilinghan Li (zl52@illinois.edu)
 
