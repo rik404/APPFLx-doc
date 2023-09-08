@@ -20,3 +20,4 @@ APPFLX.LINK is a web application that aims to provide cross-silo privacy-preserv
    :caption: News
 
    news/index
+   news/projects
