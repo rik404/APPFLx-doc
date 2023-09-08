@@ -1,6 +1,8 @@
 Active Projects
 ===============
 
+We currently have the following projects looking for students to work on, especially for those who would like to extend the projects as their master's thesis.
+
 **1. Federated Fine-Tuning of Large Language Models such as LLaMa using Parameter-Efficient Fine-Tuning (PEFT) Methods**
 
 **Abstract:**
@@ -16,5 +18,17 @@ Federated learning (FL) is a machine learning paradigm where multiple clients co
 **Contact**: Zilinghan Li (zl52@illinois.edu)
 
 
-**2. Genome-scale Language Models Fine-Tuning using Federated Learning**
+**2. Genome-scale Language Model Fine-Tuning using Federated Learning**
+
+**Abstract:**
+
+A research team from Argonne National Laboratory recently developed a `Genome-scale Language Model (GenSLM) <https://www.biorxiv.org/content/biorxiv/early/2022/11/23/2022.10.10.511571.full.pdf>`_ which adapts LLM for genomic data for learning the evolutionary landscape of SARS-CoV-2 genomes. Such a foundation model is pretrained over 110 million prokaryotic gene sequences and fine-tuned on 1.5 million SARS-CoV-2 genomes. We would like to investigate whether we could take the pretrained foundation model and fine-tune the model using federated learning approaches to make the model generalize to other specific downstream tasks.
+
+**Requirements:**
+
+- Familiar with Python programming and have basic machine learning knowledge.
+
+- Familiar with PyTorch and HuggingFace Transformer libraries is preferred.
+
+**Contact**: Zilinghan Li (zl52@illinois.edu)
 
