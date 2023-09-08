@@ -7,6 +7,11 @@ This page describes how to install a `funcX <https://funcx.org/>`_ compute endpo
 
 	funcX endpoint is only supported on linux machine.
 
+.. note::
+
+	funcX (now Globus Compute) uses AMQPS to transmit tasks and results between the cloud hosted service and the endpoint operating on the remote device. AMQPS (port 5671) is the TLS form of AMQP (port 5672), so all communication between the endpoint and cloud service are encrypted. The endpoint is responsible for connecting out to the web service using HTTPS to acquire credentials for its rabbitmq queue, which it connects to over AMQPS. The HTTPS requests are sent to https://compute.api.globus.org/ and http://auth.globus.org/ and AMQPS connection is made out to compute.amqps.globus.org.
+ 
+
 Conda environment
 -----------------
 
